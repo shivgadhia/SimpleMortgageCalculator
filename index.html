@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Mortgage Calculator</title>
+    <style type="text/css">
+    #calc-form {
+      max-width: 330px;
+      padding: 15px;
+      margin: 0 auto;
+    }
+
+    </style>
+  </head>
+  <body>
+    <form action="#" id="calc-form" role="form">
+      
+      <h3 class="text-center">Simple Mortgage Calculator</h3>
+
+      <input type="text" id="amount" class="form-control" placeholder="Amount"><br/>
+      <input type="text" id="years" class="form-control" placeholder="Years"><br/>
+      <input type="text" id="rate" class="form-control" placeholder="Rate"><br/>
+      <button id="calc" class="btn btn-lg btn-primary btn-block">Calculate</button>
+      <br/>
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          <h4 class="list-group-item-heading">Repayment:</h4>
+          <p id="answer-repayment" class="list-group-item-text"></p>
+        </li>
+
+        <li class="list-group-item">
+          <h4 class="list-group-item-heading">Interest Only:</h4>
+          <p id="answer-int-only" class="list-group-item-text"></p>
+        </li>
+       
+      </ul>
+
+    </form>
+
+   
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.3.3/backbone-min.js"></script>
+
+    <script src="app.js" type="text/javascript"></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+  </html>
