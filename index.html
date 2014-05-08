@@ -19,11 +19,23 @@
       
       <h3 class="text-center">Simple Mortgage Calculator</h3>
 
-      <input type="text" id="amount" class="form-control" placeholder="Amount"><br/>
-      <input type="text" id="years" class="form-control" placeholder="Years"><br/>
-      <input type="text" id="rate" class="form-control" placeholder="Rate"><br/>
-      <button id="calc" class="btn btn-lg btn-primary btn-block">Calculate</button>
-      <br/>
+      <div class="form-group input-group">
+        <span class="input-group-addon">£</span>
+        <input type="number" id="amount" class="form-control" placeholder="Amount">
+      </div>
+
+      <div class="form-group input-group">
+          <input type="number" id="years" class="form-control" placeholder="Years">
+          <span class="input-group-addon">yrs</span>
+      </div>
+
+      <div class="form-group input-group">
+          <input type="number" id="rate" class="form-control" placeholder="Rate">
+          <span class="input-group-addon">%</span>
+      </div>
+      <div class="form-group">
+        <button id="calc" class="btn btn-lg btn-primary btn-block">Calculate</button>
+      </div>
 
       <ul class="list-group">
         <li class="list-group-item">
@@ -39,9 +51,6 @@
       </ul>
 
     </form>
-
-   
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
